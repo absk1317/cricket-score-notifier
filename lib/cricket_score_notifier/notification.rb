@@ -1,12 +1,9 @@
 module CricketScoreNotifier
   class Notification
-
-    attr_accessor :title, :message
-
-    def initialize(title, message)
-      self.title = title
-      self.message= message
+    def self.display(status, message)
+      TerminalNotifier.notify(status, title: 'Current Status')
+      sleep 2
+      TerminalNotifier.notify(message, title: 'Current Scores')
     end
-
   end
 end
