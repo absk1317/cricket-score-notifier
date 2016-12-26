@@ -17,7 +17,6 @@ module CricketScoreNotifier
         scores[team2]    = fetch_team_score(match_details['innings'], team2_id)
         return current_status, scores
       end
-
       private
 
       def find_team_name(both_teams, team_id)

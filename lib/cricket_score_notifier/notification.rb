@@ -1,11 +1,21 @@
+require 'pry'
 module CricketScoreNotifier
   class Notification
-    class << self
-      def display(status, message)
-        TerminalNotifier.notify(status, title: 'Current Status')
-        sleep 2
-        TerminalNotifier.notify(message, title: 'Current Scores')
-      end
+    attr_accessor :title, :message
+
+    def initialize(title , message)
+      self.title = title
+      self.message = message
+    end
+
+    def score_message
+      message.values.transpose.map do |innings_score|
+        innings_score.join("           ")
+      end.join("\n")
+    end
+
+    def score_title
+      message.keys.join("   v/s   ")
     end
   end
 end

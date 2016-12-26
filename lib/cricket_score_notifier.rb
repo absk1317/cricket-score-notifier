@@ -32,12 +32,14 @@ module CricketScoreNotifier
 
     def show_notifications(choice, frequency)
       loop do
-        current_status, live_scores = fetch_live_scores(choice)
-        unless current_status
+        @match_status, @live_scores = fetch_live_scores(choice)
+        unless @match_status
           TerminalNotifier.notify('Match not started yet.', title: 'Current Status')
           break
         end
-        Notification.display(current_status, live_scores)
+        show_score_notification
+        sleep 2
+        show_status_notification
         sleep frequency
       end
     end
@@ -45,6 +47,18 @@ module CricketScoreNotifier
     def fetch_live_scores(choice)
       match_url = @live_matches[choice]['guid'].gsub("html", "json")
       LiveScoresParser.live_score(match_url)
+    end
+
+    private
+
+    def show_score_notification
+      notification = Notification.new(nil, @live_scores)
+      TerminalNotifier.notify(notification.score_message, title: notification.score_title)
+    end
+
+    def show_status_notification
+      notification = Notification.new('Current Status', @match_status)
+      TerminalNotifier.notify(notification.message, title: notification.title)
     end
   end
 end
