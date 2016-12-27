@@ -2,8 +2,10 @@
 
 require "bundler/setup"
 require "cricket_score_notifier"
-
+require "cricket_score_notifier/live_matches_feed_parser"
+require "cricket_score_notifier/live_scores_parser"
+require "cricket_score_notifier/notification"
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 
-CricketScoreNotifier.all_matches
+CricketScoreNotifier.notify
