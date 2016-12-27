@@ -1,36 +1,54 @@
 # CricketScoreNotifier
 [![Build Status](https://api.travis-ci.org/absk1317/cricket-score-notifier.svg?branch=master)](http://travis-ci.org/absk1317/cricket-score-notifier)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cricket_score_notifier`. To experiment with that code, run `bin/console` for an interactive prompt.
+CricketScoreNotifier is a gem which answers the following question:
 
-TODO: Delete this and the text above, and describe your gem
+Wouldn't it be cool to get desktop notifications of live cricket scores?
+
+CricketScoreNotifier answer this questions, by providing live score notifications right on your desktop with an interval and match of your choice.
+
+To get started please follow below steps:
+
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cricket_score_notifier'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install cricket_score_notifier
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ cricket_score_notifier
+    
+CricketScoreNotifier will prompt you with a list of ongoing matches e.g.
 
-## Development
+    To get live notifications, please select a match from following list:
+    Press 0 for:Hyderabad (India) 280/10 &  201/10 * v Mumbai 294/10 &  217/10
+    Press 1 for:Gujarat 623/9 &  263/10 * v Odisha 199/10
+    Press 2 for:Australia v Pakistan 310/6 *
+    Press 3 for:Lankan Cricket Club 428/10  v Kalutara Physical Culture Club 22/2 *
+    Press 4 for:South Africa 267/6 * v Sri Lanka
+    Press 5 for:Brisbane Heat Women 129/5  v Melbourne Stars Women 124/6 *
+    Press 6 for:Sydney Thunder Women 96/2 * v Melbourne Renegades Women 93/6
+    Press 7 for:Dhaka Metropolis 155/5 * v Barisal Division
+    Press 8 for:Khulna Division v Dhaka Division 113/2 *
+    Press 9 for:Rajshahi Division v Chittagong Division 107/4 *
+    Press 10 for:Rangpur Division v Sylhet Division 83/4 *
+    Press 11 for:Adelaide Strikers Women v Hobart Hurricanes Women
+    Press 12 for:Sydney Sixers v Perth Scorchers
+    
+Input your match choice for which you want live notifications.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After selecting a match CricketScoreNotifier will ask you for an updates frequency input i.e the time interval at which you want CricketScoreNotifier to provide you desktop notifications.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Input the frequency in seconds format and you're all set, you don't need to repeatedly go to your browser tab for checking cricket scores anymore as you can have live updates right on the desktop itself.
 
+Any suggestions/features/ideas are most welcome!
+
+## Contributors
+   The current core team consists of:
+   * [Abhishek Verma](https://github.com/absk1317)
+   * [Rohit Patel](https://github.com/rohitcy)
+
+ 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/absk1317/cricket_score_notifier. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
