@@ -1,5 +1,6 @@
 # CricketScoreNotifier
 [![Build Status](https://api.travis-ci.org/absk1317/cricket-score-notifier.svg?branch=master)](http://travis-ci.org/absk1317/cricket-score-notifier)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cricket_score_notifier`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
