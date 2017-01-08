@@ -1,4 +1,3 @@
-require 'pry'
 module CricketScoreNotifier
   class Notification
     attr_accessor :title, :message
@@ -9,7 +8,8 @@ module CricketScoreNotifier
     end
 
     def score_message
-      message.values.transpose.map do |innings_score|
+      innings_score = message.values
+      innings_score[0].zip(*innings_score[1..-1]).map do |innings_score|
         innings_score.join("           ")
       end.join("\n")
     end
