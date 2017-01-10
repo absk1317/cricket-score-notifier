@@ -55,6 +55,9 @@ Now you don't need to repeatedly go to your browser tab for checking cricket sco
 
 Any suggestions/features/ideas are most welcome!
 
+## Credits
+   Cricinfo for their awesome [APIs](http://www.espncricinfo.com/).
+
 ## Contributors
    The current core team consists of:
    * [Abhishek Verma](https://github.com/absk1317)
