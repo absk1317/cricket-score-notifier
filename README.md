@@ -1,5 +1,5 @@
 # CricketScoreNotifier
-[![Build Status](https://api.travis-ci.org/absk1317/cricket-score-notifier.svg?branch=master)](http://travis-ci.org/absk1317/cricket-score-notifier)
+[![Build Status](https://api.travis-ci.org/absk1317/cricket-score-notifier.svg?branch=master)](http://travis-ci.org/absk1317/cricket-score-notifier)  [![Gem Version](https://badge.fury.io/rb/cricket_score_notifier.svg)](https://badge.fury.io/rb/cricket_score_notifier)
 
 CricketScoreNotifier is a gem which answers the following question:
 
