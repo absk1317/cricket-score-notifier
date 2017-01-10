@@ -37,9 +37,21 @@ CricketScoreNotifier will prompt you with a list of ongoing matches e.g.
     
 Input your match choice for which you want live notifications.
 
-After selecting a match CricketScoreNotifier will ask you for an updates frequency input i.e the time interval at which you want CricketScoreNotifier to provide you desktop notifications.
+After selecting a match CricketScoreNotifier will ask you for an updates frequency input i.e the time interval at which you want CricketScoreNotifier to provide you desktop notifications. Something like this:
 
-Input the frequency in seconds format and you're all set, you don't need to repeatedly go to your browser tab for checking cricket scores anymore as you can have live updates right on the desktop itself.
+    $ At what interval would like the score updates? (enter in seconds)
+
+Input the frequency in seconds format and you're all set, you will start recieving notifications in the below format:
+
+Live Scores:
+
+![alt tag](https://github.com/absk1317/cricket-score-notifier/blob/master/images/live_score.png)
+
+Followed by current match status:
+
+![alt tag](https://github.com/absk1317/cricket-score-notifier/blob/master/images/current_status.png)
+
+Now you don't need to repeatedly go to your browser tab for checking cricket scores anymore as you can have live updates right on the desktop itself.
 
 Any suggestions/features/ideas are most welcome!
 
