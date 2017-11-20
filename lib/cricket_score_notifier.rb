@@ -34,7 +34,7 @@ module CricketScoreNotifier
       loop do
         @match_status, @live_scores = fetch_live_scores(choice)
         unless @match_status
-          TerminalNotifier.notify('Match not started yet.', title: 'Current Status')
+          TerminalNotifier.notify('Match not started yet.', title: 'Current Status', timeout: 1)
           break
         end
         show_score_notification

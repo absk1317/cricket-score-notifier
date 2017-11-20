@@ -9,8 +9,8 @@ module CricketScoreNotifier
 
     def score_message
       innings_score = message.values
-      innings_score[0].zip(*innings_score[1..-1]).map do |innings_score|
-        innings_score.join("           ")
+      innings_score[0].zip(*innings_score[1..-1]).map do |score|
+        score.join("           ")
       end.join("\n")
     end
 
